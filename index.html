@@ -1,72 +1,386 @@
----
-layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
-use-site-title: true
----
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+<!-- saved from url=(0035)http://www.cc.gatech.edu/~jeisenst/ -->
+<html><script type="text/javascript" src="chrome-extension://eoknmaajkanapojcdeccofmeimpddoim/xhr_overload.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0"> 
+<title>Jacob Eisenstein</title>
+<style type="text/css">
+a {
+text-decoration: none
+}
+dd { font-size: 12; 
+margin-bottom: 1em;
+margin-left : 0em;
+font-family : serif;
+text-indent : 0pt
+}
+div.thing {
+   opt-border-style: solid;
+   opt-border-width: 2;
+   border-color: gray;
+   padding: 5px;
+   margin-bottom: 3px;
+   font-size: 13;
+   text-align: justify
+}
+dt {
+margin-bottom: .5em;
+border: solid, 1em;
+}
+dt a {
+font-weight: bold;
+font-color: blue;
+text-decoration: none;
+font-size: 15
+}
+h2 {
+  font-size: 16;
+  font-family: sans-serif;
+  margin-top: -.05em;
+  background-color: #EEEEEE;
+  border-width: 1;
+  border-style: solid;
+  padding-left: 2em;
+  margin-left: -.1em;
+  margin-right: -.1em;
+}
+h1 {
+  font-size: 28;
+  font-family: sans-serif;
+  opt-background-color: #EEEEEE;
+  border-style: none;
+  border-width: 1;
+  padding-top: .05em;
+  padding-bottom: .05em;
+  opt-padding-left: .25em;
+  align: right;
+}
+img {
+    image-orientation: from-image;
+}
+</style>
+<style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
+<body>
+<table>
+<tbody><tr>
+<td width="100">
+<!--<img height="200" src="jacob-in-lyon-crop.jpg" align="center">-->
+<img height="250" src="headshot-cropped.jpg" align="center">
+</td>
+<td width="20"></td>
+<td width="600">
+<h1>Jacob Eisenstein</h1>
+<div style="font-size:11pt; font-style: sans-serif; text-align: justify">
+<b><a href="https://mitpress.mit.edu/books/introduction-natural-language-processing">Introduction to Natural Language Processing</a> is forthcoming in October 2019 with MIT press (<a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">draft pdf</a>)</b> <P>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
+<!--I'm an Associate Professor in the School of Interactive Computing at
+Georgia Tech, where I lead
+the <a href="http://gtnlp.wordpress.com/">Computational Linguistics
+    Laboratory</a> -->
+<!--(<a href="https://gtnlp.wordpress.com/how-to-join-the-lab/">how to join</a>). -->
+I work on computational linguistics, focusing on non-standard language, discourse,
+computational social science, and machine learning.
+<!--I am on leave for the 2018-2019 academic year, and will not be accepting new students or interns.-->
+In July 2019, I joined Google AI as a research scientist.
+<center> <p>
+<a href="pubs">publications</a>
+| <a href="https://twitter.com/jacobeisenstein">twitter</a> 
+| <a href="http://www.cc.gatech.edu/~jeisenst/bio.html">biographical sketch</a> 
+| <a href="http://www.github.com/jacobeisenstein">github</a>
+| <a href="cv-eisenstein.pdf">cv</a>  (circa 2017)
+<!--<a href="http://www.cc.gatech.edu/~jeisenst/software.html">code and data</a>-->
+</p></center>
+</div>
+ </td></tr>
+<tr>
+<td colspan="3">
+<p>
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+</p><div class="thing">
+  <h2>Research</h2>
+  <P>My research combines machine learning and linguistics to build natural language processing systems that are robust to contextual variation and offer new insights about social phenomena.
+  A complete list of publications can be found <a href="http://www.cc.gatech.edu/~jeisenst/pubs/">here</a>, on <a href="https://scholar.google.com/citations?user=Wb_lnjAAAAAJ&amp;hl=en&amp;oi=ao">Google scholar</a>, and on <a href="https://www.semanticscholar.org/author/Jacob-Eisenstein/1752524">Semantic scholar</a>.
+Here are some recent papers:</P>
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-    </div>
+<UL>
+<LI><a href="https://github.com/jacobeisenstein/language-change-tutorial">Measuring and modeling language change.</a> Eisenstein. NAACL 2019 and IC2S2 tutorial.
+<LI><a href="https://arxiv.org/pdf/1904.02817">Unsupervised domain adaptation of contextualized embeddings: A case study in early modern English.</a> Han and Eisenstein. Preprint.
+<LI><a href="https://arxiv.org/abs/1907.01468">How we do things with words: Analyzing text as social and cultural data.</a> Nguyen, Liakata, DeDeo, Eisenstein, Mimno, Tromble, Winters. Preprint.
+<LI><a href="https://arxiv.org/pdf/1902.01541">The Referential Reader: A Recurrent Entity Network for Anaphora Resolution.</a> Liu, Zettlemoyer, and Eisenstein. ACL 2019.
+<LI><a href="https://arxiv.org/abs/1709.00345">Making "fetch" happen: The influence of social and linguistic
+	     context on the success of lexical innovations.</a> Stewart and Eisenstein. EMNLP, 2018.
+<LI><a href="https://arxiv.org/pdf/1809.06951.pdf">Mind Your POV: Convergence of Articles and Editors Towards Wikipedia's Neutrality Norm.</a>
+  Pavalanathan, Han, and Eisenstein. CSCW, 2018.
+<LI><a href="https://www.mitpressjournals.org/doi/abs/10.1162/coli_a_00334">Interactional Stancetaking in Online Forums.</a> Kiesling, Pavalanathan, Fitzpatrick, Han, and Eisenstein. Computational Linguistics, September 2018.</LI>
+<LI><a href="https://arxiv.org/pdf/1808.08644.pdf">Predicting Semantic Relations using Global Graph Properties.</a>
+	  Pinter and Eisenstein. EMNLP 2018.
+<LI><a href="https://arxiv.org/pdf/1511.06052.pdf">Overcoming language variation in sentiment analysis with social attention.</a> Yang and Eisenstein. Transactions of the ACL, 2017.
+</UL>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
+<!--  <dl>
+    <dt>Making NLP robust to language variation</dt>
+    <dd><UL>
+<LI> <a href="https://arxiv.org/pdf/1804.07331.pdf">Stylistic variation in social media part-of-speech tagging.</a>
+ Balusu, Merghani, and Eisenstein. NAACL workshop on stylistic variation, 2018.
+[<a href="https://github.com/bmurali1994/socialnets_postagging">code</a>]
+</LI>	<LI><a href="https://arxiv.org/pdf/1511.06052.pdf">Overcoming language variation in sentiment analysis with social attention.</a> Yang and Eisenstein. Transactions of the ACL, 2017.
+	<LI><a href="http://arxiv.org/pdf/1609.08084.pdf">Toward socially-infused information extraction: Embedding authors, mentions, and entities.</a>
+	  Yang, Chang, and Eisenstein. EMNLP 2016.
+	<!--<LI><a href="http://arxiv.org/pdf/1603.03144.pdf"> Part-of-speech tagging for historical English.</a> Yang and Eisenstein. NAACL 2016.-->
+<!--      </UL></dd>
+      <dt>Structure and dynamics of language change in online media</dt>
+     <dd> <UL>
+	 <LI><a href="https://arxiv.org/abs/1709.00345">Making "fetch" happen: The influence of social and linguistic
+	     context on the success of lexical innovations.</a> Stewart and Eisenstein. EMNLP, 2018.
+	 <LI><a href="https://arxiv.org/pdf/1809.06951.pdf">Mind Your POV: Convergence of Articles and Editors Towards Wikipedia's Neutrality Norm.</a>
+	   Pavalanathan, Han, and Eisenstein. CSCW, 2018.
+	 <LI><a href="http://comp.social.gatech.edu/papers/cscw18-chand-hate.pdf">You Can't Stay Here: The Efficacy of Reddit's 2015 Ban Examined Through Hate Speech</a>. Chandrasekharan, Pavalanathan, Srinivasan, Glynn, Eisenstein, Gilbert. Computer-Supported Cooperative Work (CSCW), 2018.
+-->
+<!--	<LI><a href="https://arxiv.org/pdf/1601.06579.pdf">A kernel independence test for geographical language variation</a>. Nguyen and Eisenstein. Computational Linguistics (MIT Press), 2017. [<a href="https://github.com/dongpng/geo-independence-testing">code</a>] -->
+	 <!--<LI><a href="http://www.cc.gatech.edu/~jeisenst/papers/goel-socinfo-2016.pdf">The social dynamics of language change in online networks.</a> Goel, Soni, Goyal, Paparrizos, Wallach, Diaz, and Eisenstein. International Conference on Social Informatics (SocInfo), 2016.	    -->
+	<!--<LI><a href="http://americanspeech.dukejournals.org/content/90/2/187.full.pdf+html">Audience-modulated variation in online social media</a>. Pavalanathan and Eisenstein. American Speech, May 2015. [<a href="http://www.cc.gatech.edu/~jeisenst/papers/pavalanathan-audience-am-speech-2015-preprint.pdf">preprint</a>]-->
+<!--	<LI><a href="http://onlinelibrary.wiley.com/doi/10.1111/josl.12119/abstract">Systematic patterning in phonologically-motivated orthographic variation</a>. Eisenstein. Journal of Sociolinguistics, April 2015. [<a href="http://www.cc.gatech.edu/~jeisenst/papers/eisenstein-jslx-2015-preprint.pdf">preprint</a>]-->
+<!--<LI><A href="http://www.plosone.org/article/info:doi/10.1371/journal.pone.0113114">Diffusion of lexical variation in online social media</a>. Eisenstein, O'Connor, Smith, and Xing. PLOS-ONE, November 2014. [<a href="http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0113114&type=printable">pdf</a>]-->
+<!--      </UL>
+    </dd>
+<dt>Computational models of social interactional meaning</dt>
+    <dd><UL>
+	<LI><a href="https://www.mitpressjournals.org/doi/abs/10.1162/coli_a_00334">Interactional Stancetaking in Online Forums.</a> Kiesling, Pavalanathan, Fitzpatrick, Han, and Eisenstein. Computational Linguistics, September 2018.</LI>
+-->
+	<!--<LI><a href="http://www.cc.gatech.edu/~jeisenst/papers/pavalanathan-acl-camera-ready.pdf">A Multidimensional Lexicon for Interpersonal Stancetaking.</a> Pavalanathan, Fitzpatrick, Kiesling, and Eisenstein. ACL 2017.</LI>-->
+<!--  <LI><a href="http://firstmonday.org/ojs/index.php/fm/article/view/6879">More emojis, less :) The competition for paralinguistic functions in microblog writing.</a> Pavalanathan and Eisenstein. First Monday, 22(11), November 2016.
+  <LI><A href="http://www.cc.gatech.edu/~jeisenst/papers/krishnan-naacl-2015.pdf">“You're Mr. Lebowski, I'm the Dude”: Inducing address term formality in signed social networks</a>. Krishnan and Eisenstein. NAACL 2015 (best student paper!).
+-->
+  <!--<LI><A href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1467-9841">Gender identity and lexical variation in social media.</a> Bamman, Eisenstein, and Schnoebelen. Journal of Sociolinguistics, April 2014. [<a href="http://arxiv.org/abs/1210.4567">preprint</a>]-->
+<!--  </UL>
+</dd>
+<dt>Multi-level representation learning for NLP</dt>
+    <dd><UL>
+	<LI><a href="https://arxiv.org/pdf/1808.08644.pdf">Predicting Semantic Relations using Global Graph Properties.</a>
+	  Pinter and Eisenstein. EMNLP 2018.
+      <LI><a href="https://arxiv.org/abs/1707.06961">Mimicking word embeddings using subword RNNs.</a> Pinter, Guthrie, and Eisenstein. EMNLP 2017.
+      <!--<LI><a href="http://arxiv.org/abs/1608.01056">Morphological priors for probabilistic neural word embeddings.</a> Bhatia, Guthrie, and Eisenstein. EMNLP 2016.-->
+<!--      <LI><a href="http://arxiv.org/pdf/1603.01913.pdf">A latent variable recurrent neural network for discourse relation language models.</a>
+	Ji, Haffari, and Eisenstein. NAACL 2016. -->
+      <!--<LI><a href="http://www.cc.gatech.edu/~jeisenst/papers/ji-tacl-2015.pdf">One vector is not enough: Entity-augmented distributed semantics for discourse relations</a>. Ji and Eisenstein. Transactions of the ACL, 2015.-->
+      <!--<LI><a href="papers/ji-acl-2014.pdf">Representation learning for text-level discourse parsing.</a> Ji and Eisenstein. ACL 2014.-->
+<!--    </UL>
+</dd>
+  </dl>-->
 
-   </article>
-  {% endfor %}
+
+
+
+<!-- <a href="http://arxiv.org/pdf/1608.01056.pdf">Morphological Priors for Probabilistic Neural Word Embeddings</a>. Bhatia, Guthrie, and Eisenstein. EMNLP 2016.</dt>
+<dd>
+</DT>
+<DD>An analysis of changes in word popularity over time and space, correlated with macro-level demographic features of American metropolitan areas.</DD>-->
+<!--<DT><A href="papers/dialectology-chapter.pdf">Identifying regional dialects in online social media.</a> Eisenstein. To be published in the Handbook of Dialectology, 2015.</DT>
+<DD>A survey of my work on computational analysis of social media to better understand dialect variation.</DD>-->
+<!--<DT></DT>
+<DD>A reexamination of the role of gender and language, combining critical and computational perspectives. [<a href="http://onlinelibrary.wiley.com/doi/10.1111/josl.12080/abstract">published version</a>] [<a href="http://arxiv.org/abs/1210.4567">submission pdf</a>]
+</DD>
+<DT></DT>
+<DD>Jointly induce word representations that support incremental discourse parsing in rhetorical structure theory.</DD>
+</DD>-->
+<!--<DT><a href="papers/ji-emnlp-2013.pdf">Discriminative Improvements to Distributional Sentence Similarity.</a> Ji and Eisenstein. EMNLP 2013.</DT>
+<DD>We beat state-of-the-art results on paraphrase recognition by 3% raw accuracy, using a new discriminative approach to computing distributional representations for sentences.</DD>
+<DT><a href="papers/yang-emnlp-2013.pdf">A Log-Linear Model for Unsupervised Text Normalization.</a>Yang and Eisenstein. EMNLP 2013.</DT>
+<DD>We formulate unsupervised text normalization as a locally-normalized log-linear model, with a novel sequential Monte Carlo training algorithm.</DD>
+<DT><a href="papers/lasm13-phono.pdf">Phonological factors in social media writing.</a> Eisenstein. Workshop on Language Analysis in Social Media, at NAACL 2013.</DT>
+<DD>Phonological variation is transcribed into social media, including systematic contextual phenomena.</DD>
+<!--<DT><a href="papers/naacl2013-badlanguage.pdf">What to do about bad language on the internet.</a> Eisenstein. NAACL 2013.</DT>
+<DD>A critical review of NLP work in social media analysis, and relevant theoretical perspectives from sociolinguistics.</DD>
+<!--<DT><a href="papers/naacl2013-latent-subj.pdf">Discourse Connectors for Latent Subjectivity in Sentiment Analysis.</a>Trivedi and Eisenstein. NAACL 2013.</DT>
+<DD>Subjectivity is treated a latent variable, allowing the role of discourse connectors to be learned via distant supervision from document-level sentiment labels.
+</DD>
+<DT><a href="http://arxiv.org/abs/1210.4567">Gender in Twitter: Styles, Stances, and Social Networks</a>. Bamman, Eisenstein, and Schnoebelen. In review.
+</DT>
+<DD>An analysis of the relationship between gender, writing style, and social network homophily on Twitter. 
+We combine quantitative methods with a more pluralistic theoretical approach to gender.
+ (Our submission version is now very different from the arXiv paper. Please ask for a draft if you are interested.)
+</DD>
+<DT>
+<a href="papers/acl12-lexicon.pdf">Bootstrapping a Unified Model of Lexical and Phonetic Acquisition</a>. Elsner, Goldwater, and Eisenstein. Proceedings of ACL 2012.</DT>
+<DD>A Bayesian model of how children learn a vocabulary in the face of variable pronunciation by their teachers.</DD>
+<DT><a href="papers/www2012.pdf">Document Hierarchies from Text and Links</a>. Ho, Eisenstein, and Xing.
+Proceedings of WWW 2012.</DT>
+<DD>Automatically induce taxonomies for large sets of documents, where each branch is coherent with respect to both
+text and inter-document links.
+</DD>
+<DT><a href="papers/chi2012.pdf">TopicViz: Semantic Navigation of Document Collections.</a> Eisenstein, Chau, Kittur, and Xing. Supplemental
+Proceedings of CHI 2012.
+</DT>
+<DD>A system for exploring and visualizing topic models of large document collections. [<a href="http://arxiv.org/abs/1110.6200">2011 arXiv tech report</a>]
+[<a href="http://www.cs.cmu.edu/~dchau/topicviz/topicviz.mp4">mp4</a> of 2011 system]
+</DD>
+-->
+<!--
+<dt>
+<a href="papers/icml2011.pdf">Sparse Additive Generative Models of Text</a>. Eisenstein, Ahmed and Xing. Proceedings of ICML 2011.</dt>
+<dd>
+We present a new generative model of text, based on the principle of sparse deviation from a background word distribution. This approach proves effective in supervised, unsupervised, and latent variable settings. [<a href="https://github.com/jacobeisenstein/SAGE">code</a>][<a href="papers/icml2011presentation.pdf">slides</a>]
+</dd>
+
+<DT><a href="papers/acl2011.pdf">Discovering Sociolinguistic Associations with Structured Sparsity</a>. Eisenstein, Smith and Xing. Proceedings of ACL 2011.</dt>
+</DT>
+<dd>
+The space of potential associations between term frequencies and demographic attributes is very large; we apply structured sparsity to identify key associations, revealing previously unknown relationships between language and demographics. [<a href="demo-data-distrib.tgz">data</a>]
+[<a href="code/l1linf.tgz">code</a>]
+</dd>
+<dt>
+<a href="papers/emnlp2010.pdf">A Latent Variable Model for Geographic Lexical Variation</a>. Eisenstein, O'Connor, Smith and Xing. Proceedings of EMNLP 2010.</dt>
+<dd>
+We build a model of how language use varies across the United States, using a new corpus of geo-tagged text from Twitter.
+<br>We can predict location of twitter users within 500 kilometers from text alone. [<a href = "papers/lsa.pdf">slides</a> of related presentation at LSA 2011].
+<UL>
+<LI>Press coverage on <a href="http://www.npr.org/2011/01/18/133024500/you-have-an-accent-even-on-twitter">All Things Considered (NPR)</a>,
+the <a href="http://www.cbsnews.com/stories/2011/01/11/tech/main7234811.shtml">Associated Press</A>, 
+<a href="http://www.newscientist.com/article/dn19936-social-networks-create-their-own-regional-dialects.html">New Scientist</A>,
+<a href="http://www.philly.com/inquirer/health_science/daily/20110113_Regional_quirks__Datz_phila_on_Tweeter.html">Philadelphia Inquirer</A>,
+and
+<a href="http://blogs.laweekly.com/informer/2011/01/los_angeles_tweets_dialect.php">LA Weekly</a>.
+</UL>
+</dd>
+</dl>
+-->
+</dl></div>
+<a name="teaching">
+</a><div class="thing"><a name="teaching">
+<h2>Teaching</h2>
+</a><ul><a name="teaching">
+<li>Spring 2018: CS 4650/7650, <a href="https://github.com/jacobeisenstein/gt-nlp-class">Natural Language Processing</a></li>
+<li>Fall 2017: CS 8803-CSS, <a href="https://github.com/jacobeisenstein/gt-css-class/blob/master/README.md">Computational Social Science</a></li>
+<li>Spring 2017: CS 4650/7650, <a href="https://github.com/jacobeisenstein/gt-nlp-class">Natural Language Processing</a></li>
+<li>Spring 2016: CS4464/6465, </a><a href="https://github.com/jacobeisenstein/gt-compj-class">Computational Journalism</a></li>
+<li>Fall 2015: CS 4650/7650, <a href="https://github.com/jacobeisenstein/gt-nlp-class">Natural Language Processing</a></li>
+<li>Spring 2015: CS 8803-CSS, <a href="https://github.com/jacobeisenstein/gt-css-class/">Computational Social Science</a>
+<!--<a href="http://goo.gl/forms/QaWxRhgVeE">Request overload registration here</a>.--></li>
+  <li>Fall 2014: CS 4650/7650 <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/README.md">Natural Language Processing</a></li>
+<li>Spring 2014: CS 8803, <a href="https://github.com/jacobeisenstein/gt-css-class/">Computational Social Science</a></li>
+<li>Fall 2013: CS 4650/7650, <a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/README.md">Natural Language Processing</a></li>
+<li>Spring 2013: CS 4650/7650, <a href="http://gtnlpclass.wordpress.com/syllabus-spring-2013/">Natural Language Processing</a></li>
+<li>Spring 2012: CS 4650/7650, <a href="http://gtnlpclass.wordpress.com/syllabus">Natural Language Processing</a></li>
+</ul>
 </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
+<!-- <div class="thing"><a name="presentations">
+<h2>Recent and upcoming presentations</h2>
+</a><ul><a name="service">
+<li><a href="https://dongpng.github.io/attached">Bridging disciplines in analysing text as social and cultural data</a>, London, September 2017.</LI>
+<li><a href="http://mlconf.com/mlconf-2017-atlanta/">MLConf Atlanta</a>, September 2017. [<a href="slides/eisenstein-mlconf.pdf">slides</a>]</LI>
+<li><a href="https://sites.google.com/site/repl4nlp2017/">ACL Workshop on Representation Learning for NLP</a> (invited keynote), Vancouver, July 2017. [<a href="https://www.cc.gatech.edu/~jeisenst/slides/eisenstein-acl-2017-08.pdf">slides</a>]
+<LI>University of Colorado, June 2017.</LI>
+<li>Georgetown University, April 2017. [<a href="slides/eisenstein-georgetown-2017-04.pdf">slides</a>]</LI>
+<LI>Massachusetts Institute of Technology, March 2017.</LI>
+<li>University of Twente, Netherlands, March 2017.</li>
+<LI>Princeton University, February 2017.</LI>
+<li>AAAI, San Francisco, February 2017.</li>
+<li>Carnegie Mellon University, December 2016.</li>
+<li>EMNLP, Austin, November 2016.</li>-->
+<!--
+<li>DTRA Program Review, July 2016.</li>
+<li>NAACL, San Diego, June 2016.</li>
+<li>AFOSR Program Review, June 2016.</li>
+</a><li><a name="service">Xerox Research Center Europe, May 2016. [</a><a href="http://www.cc.gatech.edu/~jeisenst/slides/eisenstein-xrce-2016.pdf">slides</a>]
+</li><li>University of Toulouse, May 2016.</li>
+<li>École Normale Supérieure de Lyon, May 2016.</li>
+<li>Workshop on <a href="https://project.inria.fr/netspringlyon/">Data-Driven Approaches to Networks and Language</a> (invited), Lyon, May 2016. [<a href="http://www.cc.gatech.edu/~jeisenst/slides/eisenstein-enslyon-slides.pdf">slides</a>]
+</li><li>AAAI Spring Symposium on Observational Studies through Social Media and Other Human-Generated Content, Stanford, March 2016.</li>
+<li>Text as Data Speaker Series, NYU, February 2016.</li>
+<li>Social Science Data Analytics Series, Michigan State University, January 2016. [<a href="http://www.cc.gatech.edu/~jeisenst/slides/eisenstein-msu-2016.pdf">slides</a>]</li>
+<li>LSA Workshop on "Preparing your Corpus for Archival Storage", January 2016.</li>
+<li>Columbia University, IGERT Distinguished Speaker Series, November 2015.</li>
+<li>Bloomberg, invited speaker, November 2015.</li>
+<li>Text as Data Conference, NYU, October 2015.</li>
+<li>TextLink Workshop: <a href="http://www.coli.uni-saarland.de/conf/dispol2015/">Identification and Annotation of Discourse Relations in Spoken Language</a> (Invited Keynote), Saarbrucken, October 2015.</li>
+<li>University of Copenhagen, September 2015.</li>
+<li>Empirical Methods in Natural Language Processing, Lisbon, September 2015. Invited talk at the <a href="http://homepages.inf.ed.ac.uk/mroth/LSDSem">LSDSem workshop</a>. [<a href="http://www.cc.gatech.edu/~jeisenst/slides/eisenstein-lsdsem-2015.pdf">slides</a>]</li>-->
+<!--<LI><a href="http://www.clsp.jhu.edu/workshops/current/">Jelinek Memorial Summer Workshop</a> on Language Technology, Seattle, July-August 2015. [<a href="slides/eisenstein-discourse.pdf">slides on discourse modeling</a>]</LI>
+<LI>NAACL, Denver, June 2015. Invited keynote at the SocialNLP workshop. [<a href="eisenstein-socialnlp-2015.pdf">slides</a>]</LI>
+<LI>International Conference on Learning Representations, San Diego, May 2015</LI>
+<!--<LI>AFOSR Program Review, May 2015</LI>
+<LI>DIGI@UGA Digital Humanities event, University of Georgia, April 2015 [<a href="http://www.cc.gatech.edu/~jeisenst/eisenstein-uga-dh.pdf">slides</a>]
+<LI>Southeastern Conference on Linguistics, Raleigh NC, April 2015</LI>
+<LI>University of Georgia Digital Humanities Day, April 2015</LI>
+<LI>Stanford Linguistics Colloquium, February 2015</LI>
+<LI>American Association for the Advancement of Science Annual Meeting, February 2015 in San Jose [<a href="eisenstein-aaas-influence.pdf">slides</a>]</LI>-->
+<!--<LI>NIPS Workshop on Modern Machine Learning and Natural Language Processing, Montreal, December 2014 [<a href="papers/nips-2014-workshop-slides.pdf">slides</a>]</LI>-->
+<!--<LI><a href="http://css-workshop.gatech.edu/">Atlanta Workshop on Computational Social Science</a>, November 2014</LI>-->
+<!--<LI>Symposium on Computation and Journalism, New York, October 2014</LI>-->
+<!--<LI>Methods in Dialectology (Keynote), Groningen, August 2014</LI>-->
+<!--<LI>Association for Computational Linguistics, Baltimore, June 2014</LI>-->
+<!--<LI>Stanford Conference on Computational Social Science, April 2014. [<a href="https://www.youtube.com/watch?v=jhATs69gclI">video</a>]</LI>-->
+<!--<LI>Facebook, April 2014</LI>
+<!--<LI>Microsoft Research NYC, February 2014</LI>-->
+<!--<LI>University of Alabama-Birmingham, December 2013</LI>
+<LI>Emory University, Atlanta Computational Social Science Workshop, November 2013</LI>
+<!--<LI>University of Washington, October 2013</LI>
+<LI><a href="http://vialab.science.uoit.ca/textvis2013/">IEEE Workshop on Interactive Visual Text Analytics</a>, Keynote, Atlanta, October 2013</LI>
+<LI>National Endowment for the Humanities Digital Project Directors Meeting, October 2013</LI>
+<LI>Conference on Computational Issues in Studying Language Diversity, Groningen, Netherlands, July 2013</LI>
+<LI>North American Association of Computational Lingusitics (NAACL), Atlanta, June 2013</LI>
+<LI>Workshop on Big Data and Language Technology, Copenhagen Business School, May 2013</LI>
+<LI>Keynote at the Symposium about Language and Society, University of Texas, April 2013</LI>
+<LI>Research Foundations for Understanding Books and Reading
+in the Digital Age: E/Merging Reading, Writing, and Research Practices, December 2012.
+<LI>NIPS Workshop on Social Network and Social Media Analysis, December 2012.
+<LI>Guest lecture to Georgia Tech LING 2001: Introduction to Linguistics, November 2012. Viterbi for civilians!</LI>
+<LI>Georgia Tech GVU Brown Bag Seminar, September 2012</LI>-->
+<!--<LI>Lisbon Machine Learning Summer School, July 2012</LI>
+<LI>University of Texas, May 2012</LI>
+<LI>University of Maryland CLIP colloquium, May 2012</LI>
+<LI>Emory University, May 2012</LI>-->
+<!--<LI>Columbia University, March 2012</LI>-->
+<!--<LI>University of Pittsburgh Linguistics Colloquium, November 2011</LI>
+<LI>Johns Hopkins Center for Language and Speech Processing, October 2011</LI>-->
 </ul>
-{% endif %}
+</div>
+
+<div class="thing">
+<h2>Professional service</h2>
+<ul>
+<li>Co-chair: 2016 EMNLP Workshop on NLP and Computational Social Science.
+<li>Co-chair: 2014 <a href="http://www.mpi-sws.org/~cristian/LACSS_2014.html">ACL Workshop on Language Technologies and Computational Social Science</a>
+<li>Co-chair: 2013-2015 <a href="http://css-workshop.gatech.edu/">Atlanta Workshop on Computational Social Science</a>
+<li>Senior area chair: ACL 2019
+<li>Area chair: NAACL 2018, EMNLP 2017, NAACL 2016, ACL 2014, EACL 2013
+<LI>Tutorial co-chair: ACL 2018, NAACL 2012
+<li>Coordinator/chair/czar of student research workshop, awards, and/or volunteers: NAACL 2016, ICML 2013, NAACL 2013
+<li>Program committees: ACL, CONLL, EMNLP, NAACL, ICML, NIPS, CSCW, various workshops. All these venues are <a href="http://en.wikipedia.org/wiki/Open_access">open-access</a> (OA).
+<li>Editorial boards: Action editor at <a href="https://www.transacl.org/ojs/index.php/tacl">TACL</a> (OA), <a href="http://elanguage.net/journals/lilt/">Linguistic Issues in Language Technology</a> (OA), <a href="http://langsci-press.org/catalog/series/lv">Language Variation</a> series at Language Science Press (OA), <a href="http://www.mitpressjournals.org/loi/coli">Computational Linguistics</a> (OA)
+<li>Journal Reviewing: Communications of the ACM, Computational Linguistics (OA), Journal of Machine Learning Research (OA), Journal of Artificial Intelligence Research (OA), Machine Learning Journal, Transactions of the Association of Computational Linguistics (OA), Journal of Sociolinguistics, Journal of the American Statistical Association, Language in Society, Glossa (OA), Proceedings of the National Academy of Science, Digital Scholarship in the Humanities, ...
+<li>I prefer that my reviewing effort goes towards papers that everyone can read. So I usually will not review for venues that are non-OA, unless I submit papers there myself.
+</ul>
+</div>
+
+<!--
+<div class="thing">
+<h2>Georgia Tech affiliations</h2>
+<ul>
+<li><a href="http://www.ic.gatech.edu/">School of Interactive Computing</a>
+<li><a href="http://ml.cc.gatech.edu/">Center for Machine Learning</a>
+<li><A href="https://modlangs.gatech.edu/languages/linguistics">Linguistics Certificate</A>
+<li><a href="http://dhlab.lmc.gatech.edu/">Digital Humanities Lab</a>
+<li><a href="http://ipat.gatech.edu/">Institute for People and Technology</a>
+<li><a href="http://gvu.gatech.edu/">The GVU Center</a>
+</li></ul>
+</div>
+<div class="thing">
+<h2>Contact</h2>
+School of Interactive Computing
+<br>Georgia Institute of Technology
+<br>801 Atlantic Drive NW, Atlanta, GA 30308
+<br>Admin: +1 404 385 2827
+<br>Most preferred: jacobe gmail
+<br><!--<b><a href="https://gtnlp.wordpress.com/how-to-join-the-lab/">More information for students about how to work with me</a>-->
+<!--</div>
+-->
+</td>
+<td width="150"></td></tr>
+</tbody></table>
+
+
+
+</div></body></html>
